@@ -67,7 +67,6 @@ async def play(ctx, *, name):
     ctx.voice_client.play(source)
     await ctx.send(f"▶️ Gra {name.capitalize()}")
 
-# Skróty komend:
 @bot.command() async def eska(ctx): await play(ctx, name="eska")
 @bot.command() async def rmf_fm(ctx): await play(ctx, name="rmf-fm")
 @bot.command() async def rmf_maxx(ctx): await play(ctx, name="rmf-maxx")
